@@ -87,10 +87,12 @@ export default function ContactPage() {
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md h-[300px]">
               <iframe
                 title="Map to WebArya"
-                src="https://maps.google.com/maps?q=Bengaluru%20Tech%20Park&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                className="h-full w-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2430521691495!2d77.77842007358879!3d12.956293215216691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0dc85ff93e1f%3A0x84e465593cf89043!2sNavodaya%20Bharat%20Gas%20Godown!5e0!3m2!1sen!2sin!4v1758445621938!5m2!1sen!2sin"
+                className="w-full h-full"
+                style={{ border: 0 }}
               />
             </div>
+
           </div>
         </div>
       </section>
