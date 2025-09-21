@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/navbar"
-import { FloatingContacts, WhatsAppFloat } from "@/components/whatsapp-float"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { SectionHeading } from "@/components/section-heading"
 
 export const metadata = {
@@ -97,7 +97,6 @@ export default function ContactPage() {
         </div>
       </section>
       <WhatsAppFloat />
-      <FloatingContacts />
     </main>
   )
 }

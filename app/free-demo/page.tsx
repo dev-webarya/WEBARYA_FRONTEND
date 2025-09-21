@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar"
 // import { Footer } from "@/components/footer"
 import { DemoForm } from "@/components/demo-form"
-import { FloatingContacts, WhatsAppFloat } from "@/components/whatsapp-float"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
 
 export const metadata = {
   title: "Book a Free Demo — WebArya",
@@ -21,7 +21,6 @@ export default function FreeDemoPage() {
       </section>
       {/* <Footer /> */}
       <WhatsAppFloat />
-           <FloatingContacts />
     </main>
   )
 }

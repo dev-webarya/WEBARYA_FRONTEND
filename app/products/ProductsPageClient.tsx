@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Navbar } from "@/components/navbar";
-import { FloatingContacts, WhatsAppFloat } from "@/components/whatsapp-float";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 import { SectionHeading } from "@/components/section-heading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import productData from "@/app/seed-data/product-data.json";
@@ -65,8 +65,6 @@ export default function ProductsPageClient({ detailed = true }) {
       {modalCategory && detailed && (
         <ProductModal isOpen={!!modalCategory} onClose={() => setModalCategory(null)} category={modalCategory} />
       )}
-
-      <FloatingContacts />
       <WhatsAppFloat />
     </main>
   );
