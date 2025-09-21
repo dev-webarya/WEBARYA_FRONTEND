@@ -41,7 +41,6 @@ export default function HomePage(): JSX.Element {
               <DemoForm />
             </div>
 
-
             <div className="rounded-2xl bg-gradient-to-br from-indigo-400 via-purple-300 to-pink-300 p-8 shadow-xl backdrop-blur-md border border-white/30">
               <h3 className="text-3xl font-bold text-gray-900 tracking-tight">
                 Why Choose <span className="text-purple-700">WebArya?</span>
@@ -64,8 +63,23 @@ export default function HomePage(): JSX.Element {
                   <CheckCircle className="text-green-500 w-6 h-6" />
                   <span className="text-lg">Proven solutions for <strong>enterprises & startups</strong></span>
                 </li>
+
+                {/* New points based on your products/services */}
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 w-6 h-6" />
+                  <span className="text-lg">Custom <strong>website & app development</strong> with modern UI/UX</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 w-6 h-6" />
+                  <span className="text-lg">AI-driven <strong>automation bots & agents</strong> to optimize workflows</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="text-green-500 w-6 h-6" />
+                  <span className="text-lg">Smart <strong>enterprise solutions</strong> for transport, school, and finance management</span>
+                </li>
               </ul>
             </div>
+
 
           </div>
         </section>
