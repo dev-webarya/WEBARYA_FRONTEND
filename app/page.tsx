@@ -6,7 +6,7 @@ import { Navbar } from "@/components/navbar"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { SectionHeading } from "@/components/section-heading"
 import { DemoForm } from "@/components/demo-form"
-import { WhatsAppFloat, FloatingContacts } from "@/components/whatsapp-float"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { JSX } from "react"
 import ServicesPageClient from "./services/ServicesPageClient";
 import ProductsPageClient from "./products/ProductsPageClient";
@@ -179,7 +179,6 @@ export default function HomePage(): JSX.Element {
 
 
         <WhatsAppFloat />
-        <FloatingContacts />
       </div>
     </main>
   )
