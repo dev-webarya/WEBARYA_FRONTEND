@@ -1,6 +1,6 @@
 {
   "WebsiteDevelopment": {
-    "imageUrl": "/Screenshot 2025-09-21 113706.png",
+    "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/web-dev-web-arya_cnk0ep.png",
     "shortDescription": [
       "💻 Modern & scalable websites designs",
       "📱 Responsive & mobile-friendly design",
@@ -37,7 +37,7 @@
     ]
   },
   "AppDevelopment": {
-    "imageUrl": "/Screenshot 2025-09-21 114624.png",
+    "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445694/app-dev-web-arya_owccem.png",
     "shortDescription": [
       "📱 Native & hybrid mobile apps designs",
       "⚡ Fast performance & seamless UX",
@@ -74,7 +74,7 @@
     ]
   },
   "AIAutomationAgenticBots": {
-    "imageUrl": "/Screenshot 2025-09-21 115130.png",
+    "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/chatboat-automation_pyqqkk.png",
     "shortDescription": [
       "🤖 AI-driven automation for smarter workflows",
       "⚙️ Intelligent bots to automate tasks",

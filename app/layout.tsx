@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "WebArya",
   description: "AI, Web & App development and automation services. Book a free demo.",
    icons: {
-    icon: "/favicon.ico",
+    icon: "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1757748236/android-chrome-512x512_p8hxjv.png",
     apple: "/apple-touch-icon.png",
   },
   generator: "v0.app",

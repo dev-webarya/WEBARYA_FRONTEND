@@ -1,7 +1,7 @@
 {
   "MasterProductPortfolio": {
     "Cab Transport Services": {
-      "imageUrl": "/automation-workflow.png",
+      "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/automation-workflow_i6dhbl.png",
       "shortDescription": [
         "🚖 Optimize transport operations",
         "🧭 Automate bookings & route planning",
@@ -59,7 +59,7 @@
       ]
     },
     "Personal Finance Management": {
-      "imageUrl": "/image.png",
+      "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/finacial_market_l5vfcv.png",
       "shortDescription": [
         "💰 Track expenses & control spending",
         "📊 Plan budgets and set financial goals",
