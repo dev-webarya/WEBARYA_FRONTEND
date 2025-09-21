@@ -1,0 +1,91 @@
+{
+  "MasterProductPortfolio": {
+    "Cab Transport Services": {
+      "imageUrl": "/automation-workflow.png",
+      "shortDescription": [
+        "🚖 Optimize transport operations",
+        "🧭 Automate bookings & route planning",
+        "📍 School/College Transport ERP",
+        "💰 Calculate fares & manage fleet easily",
+        "📲 Real-time driver & vehicle tracking"
+      ],
+      "longDescription": "Our Cab Transport system handles bookings, route planning, driver tracking, fare calculation, and fleet management. It reduces costs and improves customer satisfaction through automation.",
+      "products": [
+        {
+          "name": "Fleet Manager",
+          "features": [
+            "Driver logs",
+            "Vehicle status",
+            "Maintenance alerts"
+          ]
+        },
+        {
+          "name": "Booking Engine",
+          "features": [
+            "Real-time booking",
+            "Fare estimator",
+            "Ride history"
+          ]
+        }
+      ]
+    },
+    "School Management": {
+      "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758129490/image_4_jm3fzl.png",
+      "shortDescription": [
+        "👩‍🏫 Manage students, staff, and classes",
+        "📝 Automate fees, exams, and attendance",
+        "⚡ Boost productivity with all-in-one control",
+        "📚 Digital academic records & reports",
+        "📞 Seamless parent-teacher communication"
+      ],
+      "longDescription": "Our School Management system provides an all-in-one platform to handle admissions, attendance, exams, staff management, fee collection, and parent communication. It streamlines every academic and administrative task to boost productivity and transparency.",
+      "products": [
+        {
+          "name": "Admission Manager",
+          "features": [
+            "Online forms",
+            "Fee tracking",
+            "Document upload"
+          ]
+        },
+        {
+          "name": "Attendance Tracker",
+          "features": [
+            "Daily logs",
+            "Leave requests",
+            "Real-time sync"
+          ]
+        }
+      ]
+    },
+    "Personal Finance Management": {
+      "imageUrl": "/image.png",
+      "shortDescription": [
+        "💰 Track expenses & control spending",
+        "📊 Plan budgets and set financial goals",
+        "📈 Monitor investments & analyze growth",
+        "🔔 Get reminders for bills & due dates",
+        "📉 Reduce debt with smart insights"
+      ],
+      "longDescription": "Our Personal Finance Management tool helps individuals track expenses, create budgets, monitor investments, and achieve financial goals with powerful analytics and insights.",
+      "products": [
+        {
+          "name": "Budget Planner",
+          "features": [
+            "Expense categorization",
+            "Budget goals",
+            "Monthly insights"
+          ]
+        },
+        {
+          "name": "Investment Tracker",
+          "features": [
+            "Portfolio analysis",
+            "ROI calculator",
+            "Growth charts"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "WebsiteDevelopment": {
+    "imageUrl": "/Screenshot 2025-09-21 113706.png",
+    "shortDescription": [
+      "💻 Modern & scalable websites designs",
+      "📱 Responsive & mobile-friendly design",
+      "⚡ Fast, secure & SEO optimized",
+      "🔗 CMS integration for easy management",
+      "🌐 Cross-browser compatible"
+    ],
+    "longDescription": "We build modern, scalable static and dynamic websites tailored to your brand. Our solutions are responsive, fast, secure, SEO optimized, and easy to manage with CMS integration. Perfect for businesses looking to establish a strong online presence.",
+    "products": [
+      {
+        "name": "Landing Pages",
+        "features": [
+          "Responsive layouts",
+          "SEO optimized",
+          "Fast loading"
+        ]
+      },
+      {
+        "name": "E-commerce Websites",
+        "features": [
+          "Product catalog",
+          "Secure checkout",
+          "Payment integration"
+        ]
+      },
+      {
+        "name": "Web Applications",
+        "features": [
+          "Interactive UI",
+          "Database integration",
+          "API support"
+        ]
+      }
+    ]
+  },
+  "AppDevelopment": {
+    "imageUrl": "/Screenshot 2025-09-21 114624.png",
+    "shortDescription": [
+      "📱 Native & hybrid mobile apps designs",
+      "⚡ Fast performance & seamless UX",
+      "🔒 Secure data handling & encryption",
+      "🛠  App development with API integration",
+      "📊 Real-time analytics & reporting"
+    ],
+    "longDescription": "We specialize in creating custom mobile and web applications with top-notch performance and seamless user experiences. Our apps are secure, scalable, and integrate with third-party services via APIs. Whether you need a native mobile app or a cross-platform solution, we’ve got you covered.",
+    "products": [
+      {
+        "name": "Mobile Apps",
+        "features": [
+          "Native iOS & Android development",
+          "Push notifications",
+          "App store submission"
+        ]
+      },
+      {
+        "name": "Cross-Platform Apps",
+        "features": [
+          "Single codebase for iOS and Android",
+          "Fast development cycle",
+          "Offline support"
+        ]
+      },
+      {
+        "name": "Progressive Web Apps (PWAs)",
+        "features": [
+          "App-like experience on the web",
+          "Offline capabilities",
+          "Push notifications & fast loading"
+        ]
+      }
+    ]
+  },
+  "AIAutomationAgenticBots": {
+    "imageUrl": "/Screenshot 2025-09-21 115130.png",
+    "shortDescription": [
+      "🤖 AI-driven automation for smarter workflows",
+      "⚙️ Intelligent bots to automate tasks",
+      "💬 Context-aware agents",
+      "🔄 Real-time decision-making & task handling",
+      "🔗 Seamless integration with existing systems"
+    ],
+    "longDescription": "Our AI Automation and Agentic Bots are designed to enhance business workflows by automating repetitive tasks, driving intelligent decision-making, and improving interaction quality. These bots handle everything from customer queries to complex process automation, improving efficiency and scalability while integrating smoothly into your existing systems.",
+    "products": [
+      {
+        "name": "Process Automation Bot",
+        "features": [
+          "Automates routine tasks",
+          "Reduces human error",
+          "Integrates with workflows & CRMs"
+        ]
+      },
+      {
+        "name": "Intelligent Agent Bot",
+        "features": [
+          "Real-time decision-making",
+          "Context-aware responses",
+          "Personalized customer interactions"
+        ]
+      },
+      {
+        "name": "Data Processing & Insights Bot",
+        "features": [
+          "Automates data collection & analysis",
+          "Provides actionable insights",
+          "Supports business intelligence (BI) tools"
+        ]
+      }
+    ]
+  }
+}
