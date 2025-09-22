@@ -10,6 +10,7 @@ import servicesData from "@/app/seed-data/service-data.json";
 import ServiceModal from "@/components/ServiceModal";
 
 type Service = {
+  title: string;
   imageUrl: string;
   shortDescription: string[] | string;
   longDescription: string;
@@ -26,35 +27,35 @@ export default function ServicesPage({ detailed = true }: { detailed?: boolean }
         <SectionHeading title="Our Services" subtitle="Explore our services" />
         <div className="grid gap-6 md:grid-cols-3">
           {Object.entries(servicesData).map(([key, service]) => {
-            const readableTitle = key.replace(/([A-Z])/g, " $1").trim();
+            const s = service as Service;
             return (
               <Card
                 key={key}
                 className="rounded-2xl border border-gray-300 shadow-sm transition-all duration-300 group hover:shadow-lg hover:border-blue-500 cursor-pointer"
-                onClick={() => setModalService(service as Service)}
+                onClick={() => setModalService(s)}
               >
                 <CardHeader className="flex flex-col items-center">
                   <div className="h-32 w-full max-w-xs rounded-lg overflow-hidden border border-gray-200 shadow-sm">
                     <Image
-                      src={service.imageUrl}
-                      alt={readableTitle}
+                      src={s.imageUrl}
+                      alt={s.title}
                       width={400}
                       height={200}
                       className="object-cover transition-transform group-hover:scale-110"
                     />
                   </div>
                   <CardTitle className="text-xl font-semibold text-center mt-2">
-                    {readableTitle}
+                    {s.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3 text-sm text-gray-700">
-                  {Array.isArray(service.shortDescription)
-                    ? service.shortDescription.map((desc, idx) => (
+                  {Array.isArray(s.shortDescription)
+                    ? s.shortDescription.map((desc, idx) => (
                         <p key={idx} className="hover:text-blue-500 transition-colors duration-200">
                           {desc}
                         </p>
                       ))
-                    : <p className="hover:text-blue-500 transition-colors duration-200">{service.shortDescription}</p>}
+                    : <p className="hover:text-blue-500 transition-colors duration-200">{s.shortDescription}</p>}
                 </CardContent>
               </Card>
             );

@@ -1,5 +1,6 @@
 {
   "WebsiteDevelopment": {
+    "title": "Website Development",
     "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/web-dev-web-arya_cnk0ep.png",
     "shortDescription": [
       "💻 Modern & scalable websites designs",
@@ -19,7 +20,7 @@
         ]
       },
       {
-        "name": "E-commerce Websites",
+        "name": "Features",
         "features": [
           "Product catalog",
           "Secure checkout",
@@ -37,12 +38,13 @@
     ]
   },
   "AppDevelopment": {
+    "title": "App Development",
     "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445694/app-dev-web-arya_owccem.png",
     "shortDescription": [
+      "🛠  App development with API integration",
       "📱 Native & hybrid mobile apps designs",
       "⚡ Fast performance & seamless UX",
       "🔒 Secure data handling & encryption",
-      "🛠  App development with API integration",
       "📊 Real-time analytics & reporting"
     ],
     "longDescription": "We specialize in creating custom mobile and web applications with top-notch performance and seamless user experiences. Our apps are secure, scalable, and integrate with third-party services via APIs. Whether you need a native mobile app or a cross-platform solution, we’ve got you covered.",
@@ -74,6 +76,7 @@
     ]
   },
   "AIAutomationAgenticBots": {
+    "title": "AI Automation Agentic Bots",
     "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/chatboat-automation_pyqqkk.png",
     "shortDescription": [
       "🤖 AI-driven automation for smarter workflows",

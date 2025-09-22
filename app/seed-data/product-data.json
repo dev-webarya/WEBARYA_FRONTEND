@@ -1,6 +1,7 @@
 {
   "MasterProductPortfolio": {
-    "Cab Transport Services": {
+    "CabTransportServices": {
+      "title": "Cab Transport Services",
       "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/automation-workflow_i6dhbl.png",
       "shortDescription": [
         "🚖 Optimize transport operations",
@@ -29,7 +30,8 @@
         }
       ]
     },
-    "School Management": {
+    "SchoolManagement": {
+      "title": "School Management",
       "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758129490/image_4_jm3fzl.png",
       "shortDescription": [
         "👩‍🏫 Manage students, staff, and classes",
@@ -58,7 +60,8 @@
         }
       ]
     },
-    "Personal Finance Management": {
+    "PersonalFinanceManagement": {
+      "title": "Personal Finance Management",
       "imageUrl": "https://res.cloudinary.com/dmpuu4gvn/image/upload/v1758445355/finacial_market_l5vfcv.png",
       "shortDescription": [
         "💰 Track expenses & control spending",
