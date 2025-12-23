@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-// The interface remains the same
 interface DemoScheduleRequest {
   firstName: string;
   lastName: string;
@@ -14,7 +13,6 @@ interface DemoScheduleRequest {
   preferredDemoTime: string;
 }
 
-// The InputField component remains the same
 function InputField({
   label,
   name,
@@ -32,7 +30,7 @@ function InputField({
 }) {
   return (
     <div className="flex flex-col">
-      <label htmlFor={name} className="text-gray-700 text-sm font-medium mb-1">{label}</label>
+      <label htmlFor={name} className="text-gray-700 text-sm font-medium mb-1.5">{label}</label>
       <input
         id={name}
         name={name}
@@ -40,7 +38,7 @@ function InputField({
         placeholder={placeholder}
         required={required}
         onChange={onChange}
-        className="rounded-lg bg-gray-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+        className="rounded-xl bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all"
       />
     </div>
   );
@@ -72,7 +70,6 @@ export function DemoForm() {
     };
 
     try {
-      // ✅ CHANGED: Point fetch to your new API route
       const res = await fetch("/api/schedule-demo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -80,12 +77,10 @@ export function DemoForm() {
       });
 
       if (!res.ok) {
-        // Try to get a more specific error message from the API response
         const errorData = await res.json();
         throw new Error(errorData.error || "Failed to book demo.");
       }
 
-      // ✅ CHANGED: Updated success message
       setSuccess("🎉 Demo booked! An acknowledgment has been sent to your email.");
       form.reset();
     } catch (err: any) {
@@ -102,34 +97,33 @@ export function DemoForm() {
 
   return (
     <div>
-      <h2 className="text-xl font-semibold text-gray-800 text-center mb-6">Schedule a Demo</h2>
-      {/* The form structure remains exactly the same */}
-      <form onSubmit={handleSubmit} className="grid gap-3" onFocus={handleInputChange}>
-        <div className="grid gap-2 md:grid-cols-2">
+      <form onSubmit={handleSubmit} className="grid gap-4" onFocus={handleInputChange}>
+        <div className="grid gap-4 md:grid-cols-2">
           <InputField label="First Name" name="firstName" placeholder="John" onChange={handleInputChange} />
           <InputField label="Last Name" name="lastName" placeholder="Doe" onChange={handleInputChange} />
         </div>
-        <div className="grid gap-2 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2">
           <InputField label="Email" name="email" type="email" placeholder="you@example.com" onChange={handleInputChange} />
-          <InputField label="Phone Number" name="phoneNumber" placeholder="+1234567890" onChange={handleInputChange} />
+          <InputField label="Phone Number" name="phoneNumber" placeholder="+91 9876543210" onChange={handleInputChange} />
         </div>
-        <div className="grid gap-2 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2">
           <InputField label="Job Title" name="jobTitle" placeholder="Product Manager" onChange={handleInputChange} />
           <InputField label="Service Interest" name="serviceInterest" placeholder="Web Development" onChange={handleInputChange} />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="projectDetails" className="text-gray-700 text-sm font-medium mb-1">Project Details</label>
+          <label htmlFor="projectDetails" className="text-gray-700 text-sm font-medium mb-1.5">Project Details</label>
           <textarea
             id="projectDetails"
             name="projectDetails"
             placeholder="Describe your project..."
             required
+            rows={3}
             onChange={handleInputChange}
-            className="rounded-lg bg-gray-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            className="rounded-xl bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all resize-none"
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="preferredDemoTime" className="text-gray-700 text-sm font-medium mb-1">Preferred Demo Time</label>
+          <label htmlFor="preferredDemoTime" className="text-gray-700 text-sm font-medium mb-1.5">Preferred Demo Time</label>
           <input
             id="preferredDemoTime"
             name="preferredDemoTime"
@@ -137,20 +131,27 @@ export function DemoForm() {
             min={new Date().toISOString().slice(0, 16)}
             required
             onChange={handleInputChange}
-            className="rounded-lg bg-gray-50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+            className="rounded-xl bg-gray-50 border border-gray-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all"
           />
         </div>
         <button
           type="submit"
           disabled={loading}
-          className={`rounded-lg bg-blue-600 text-white px-4 py-2 text-sm font-medium hover:bg-blue-700 transition-colors ${
-            loading ? "opacity-70 cursor-not-allowed" : ""
-          }`}
+          className={`mt-2 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3.5 text-sm font-semibold hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] ${loading ? "opacity-70 cursor-not-allowed" : ""
+            }`}
         >
-          {loading ? "Booking..." : "Schedule Demo"}
+          {loading ? "Booking..." : "Schedule Demo →"}
         </button>
-        {success && <p className="text-green-600 text-sm mt-2">{success}</p>}
-        {error && <p className="text-red-600 text-sm mt-2">{error}</p>}
+        {success && (
+          <div className="flex items-center gap-2 p-3 rounded-xl bg-green-50 border border-green-200">
+            <span className="text-green-600 text-sm">{success}</span>
+          </div>
+        )}
+        {error && (
+          <div className="flex items-center gap-2 p-3 rounded-xl bg-red-50 border border-red-200">
+            <span className="text-red-600 text-sm">{error}</span>
+          </div>
+        )}
       </form>
     </div>
   );

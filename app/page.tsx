@@ -30,59 +30,70 @@ export default function HomePage(): JSX.Element {
         {/* Demo Form */}
         <section
           id="demo"
-          className="mx-auto max-w-6xl px-4 py-12"
+          className="relative mx-auto max-w-6xl px-4 py-16 overflow-hidden"
         >
+          {/* Background decorations */}
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/10 rounded-full blur-3xl"></div>
+
           <SectionHeading
             title="Book a Free Demo"
-            subtitle="Tell us what you're interested in"
+            subtitle="Experience our solutions firsthand with a personalized walkthrough"
           />
-          <div className="mt-8 grid gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-md">
-              <DemoForm />
+          <div className="relative mt-10 grid gap-8 lg:grid-cols-2">
+            {/* Form Card */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+              <div className="relative rounded-3xl border border-gray-200 bg-white p-8 shadow-2xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
+                    <span className="text-white text-xl">📅</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Schedule a Demo</h3>
+                    <p className="text-sm text-gray-500">Fill in your details below</p>
+                  </div>
+                </div>
+                <DemoForm />
+              </div>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-br from-indigo-400 via-purple-300 to-pink-300 p-8 shadow-xl backdrop-blur-md border border-white/30">
-              <h3 className="text-3xl font-bold text-gray-900 tracking-tight">
-                Why Choose <span className="text-purple-700">WebArya?</span>
-              </h3>
+            {/* Why Choose Card */}
+            <div className="relative">
+              <div className="rounded-3xl bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 p-8 shadow-2xl overflow-hidden">
+                {/* Background glow */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl"></div>
 
-              <ul className="mt-8 space-y-5 text-gray-800">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">Experienced in <strong>AI/ML, Web & Mobile</strong></span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">Fast delivery with <strong>reliable support</strong></span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">Tailored <strong>automation</strong> for your workflows</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">Proven solutions for <strong>enterprises & startups</strong></span>
-                </li>
+                <div className="relative">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    Why Choose <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">WebArya?</span>
+                  </h3>
+                  <p className="text-gray-400 mt-2">Transform your business with our expertise</p>
 
-                {/* New points based on your products/services */}
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">Custom <strong>website & app development</strong> with modern UI/UX</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">AI-driven <strong>automation bots & agents</strong> to optimize workflows</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-500 w-6 h-6" />
-                  <span className="text-lg">Smart <strong>enterprise solutions</strong> for transport, school, and finance management</span>
-                </li>
-              </ul>
+                  <ul className="mt-8 space-y-4">
+                    {[
+                      { icon: "🚀", text: "Experienced in AI/ML, Web & Mobile" },
+                      { icon: "⚡", text: "Fast delivery with reliable support" },
+                      { icon: "🔧", text: "Tailored automation for your workflows" },
+                      { icon: "🏢", text: "Proven solutions for enterprises & startups" },
+                      { icon: "💻", text: "Custom website & app development" },
+                      { icon: "🤖", text: "AI-driven automation bots & agents" },
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-4 p-3 rounded-xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors group">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                          {item.icon}
+                        </div>
+                        <span className="text-gray-200 font-medium">{item.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
-
-
           </div>
         </section>
+
 
         {/* Vision */}
         <section

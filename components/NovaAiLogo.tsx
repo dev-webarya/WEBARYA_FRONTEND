@@ -2,22 +2,25 @@
 
 import React from "react";
 
-type Props = { className?: string };
+type Props = {
+  className?: string;
+  scrolled?: boolean;
+};
 
-export function WebAryaLogo({ className = "" }: Props) {
+export function WebAryaLogo({ className = "", scrolled = true }: Props) {
   return (
-    <div className={`flex items-center ${className}`}>
-      {/* Updated Company logo image */}
+    <div className={`flex items-center gap-2 ${className}`}>
+      {/* Company logo image - using Cloudinary background removal */}
       <img
-        src="https://res.cloudinary.com/dmpuu4gvn/image/upload/v1757748236/android-chrome-512x512_p8hxjv.png" // ✅ Use your uploaded logo (place inside /public folder in Next.js)
+        src="https://res.cloudinary.com/dmpuu4gvn/image/upload/e_background_removal/v1757748236/android-chrome-512x512_p8hxjv.png"
         alt="WebARYA logo"
-        className="w-12 h-12 flex-none object-contain"
+        className="w-8 h-8 flex-none object-contain"
       />
 
-      {/* Updated Brand text */}
-      <span className="ml-2 text-2xl font-extrabold tracking-tight">
-        <span className="text-black">Web</span>
-        <span className="text-blue-600">ARYA</span>
+      {/* Brand text - color changes based on scroll */}
+      <span className="text-xl font-extrabold tracking-tight transition-colors duration-300">
+        <span className={scrolled ? "text-black" : "text-white"}>Web</span>
+        <span className={scrolled ? "text-blue-600" : "text-blue-400"}>ARYA</span>
       </span>
     </div>
   );

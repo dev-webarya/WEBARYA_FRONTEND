@@ -37,16 +37,20 @@ export default function AboutPage() {
         </p>
 
         {/* Quick Stats */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {[
-            { value: "AI-First", label: "Approach" },
-            { value: "Full-Stack", label: "Expertise" },
-            { value: "24/7", label: "Support" },
-            { value: "100%", label: "Commitment" },
+            { value: "AI-First", label: "Approach", icon: "🚀" },
+            { value: "Full-Stack", label: "Expertise", icon: "💻" },
+            { value: "24/7", label: "Support", icon: "⚡" },
+            { value: "100%", label: "Commitment", icon: "🎯" },
           ].map((item, i) => (
-            <div key={i} className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-              <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">{item.value}</p>
-              <p className="text-gray-600 text-sm mt-1">{item.label}</p>
+            <div key={i} className="group relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+              <div className="relative bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-1">
+                <div className="text-3xl mb-3">{item.icon}</div>
+                <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{item.value}</p>
+                <p className="text-gray-500 text-sm mt-1 font-medium">{item.label}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -131,12 +135,15 @@ export default function AboutPage() {
             { icon: Award, title: "Excellence", desc: "Delivering quality without compromise", color: "from-blue-400 to-indigo-500" },
             { icon: Zap, title: "Speed", desc: "Fast execution, faster results", color: "from-purple-400 to-pink-500" },
           ].map((value, i) => (
-            <div key={i} className="text-center group">
-              <div className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-r ${value.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                <value.icon className="w-8 h-8 text-white" />
+            <div key={i} className="group relative">
+              <div className={`absolute inset-0 bg-gradient-to-r ${value.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
+              <div className="relative text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 transition-all duration-300 hover:-translate-y-1">
+                <div className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-r ${value.color} flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg`}>
+                  <value.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{value.title}</h3>
+                <p className="text-gray-500 text-sm">{value.desc}</p>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h3>
-              <p className="text-gray-600 text-sm">{value.desc}</p>
             </div>
           ))}
         </div>
