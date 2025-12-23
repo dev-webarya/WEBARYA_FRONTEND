@@ -76,8 +76,8 @@ export default function ContactPage() {
                 </p>
                 <p>
                   📞 Phone:{" "}
-                  <a className="text-blue-600 hover:underline" href="tel:+9188861919000">
-                    +91 88861919000
+                  <a className="text-blue-600 hover:underline" href="tel:+918861919000">
+                    +91 8861919000
                   </a>
                 </p>
                 <p>📍 Address: Harohalli village, nearby Bharath Gas godown muthsandra post, anugondanahalli hobli , Hoskote taluk Bangalore Karnataka 560087</p>
