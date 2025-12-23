@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/products", label: "Products" },
+  { href: "/customers", label: "Customers" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact Us" },
 ];
@@ -35,9 +36,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur shadow-md" : "bg-transparent"
+        }`}
     >
       <nav className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         {/* Logo */}

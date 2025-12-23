@@ -112,5 +112,43 @@
         ]
       }
     ]
+  },
+  "DigitalMarketing": {
+    "title": "Digital Marketing",
+    "imageUrl": "/digital_marketing.png",
+    "shortDescription": [
+      "📈 Data-driven growth strategies",
+      "🔍 Advanced SEO & SEM optimization",
+      "📱 Engaging social media campaigns",
+      "✍️ High-impact content marketing",
+      "📊 Real-time performance analytics"
+    ],
+    "longDescription": "We accelerate your brand's growth with comprehensive digital marketing solutions. From dominating search results with advanced SEO to creating viral social media campaigns, we use data-driven strategies to increase visibility, engagement, and conversions. Our approach ensures your message reaches the right audience at the right time.",
+    "products": [
+      {
+        "name": "Search Engine Optimization (SEO)",
+        "features": [
+          "Keyword research & strategy",
+          "On-page & Off-page optimization",
+          "Technical SEO audits"
+        ]
+      },
+      {
+        "name": "Social Media Marketing",
+        "features": [
+          "Platform-specific strategies",
+          "Content creation & scheduling",
+          "Community management"
+        ]
+      },
+      {
+        "name": "Performance Marketing",
+        "features": [
+          "PPC & Ad campaign management",
+          "Conversion rate optimization",
+          "Detailed ROI tracking"
+        ]
+      }
+    ]
   }
 }
